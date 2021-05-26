@@ -16,6 +16,8 @@ nav {
   justify-content: space-between;
   padding: 15px;
   background-color: var(--clr-light);
+  transition: .5s all;
+ 
 }
 
 span::before {
@@ -45,27 +47,25 @@ span::before {
  
     position: fixed;
     background-color: rgb(82, 69, 79);
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* display: none; */
-    clip-path: circle(10px at 90% -10%);
-    -webkit-clip-path:(10px at 90% -10%);
+    clip-path: circle(10px at 50% -10%);
+    -webkit-clip-path:(10px at 50% -10%);
      transition: all 0.5s ease-out;
+     z-index: 10;
+   
   }
-  /* nav{
-    padding: 0;
-    margin: 0;
-  } */
-  .nav-items.open{
-    clip-path: circle(880px at 10% -10%);
-    -webkit-clip-path:(880px at 10% -10%);
-  }
+  
+  
   .hamburger{
     cursor: pointer;
-    z-index: 1;
+    z-index: 20;
     padding: 3px 20px 0px 20px;
   }
   .line{
